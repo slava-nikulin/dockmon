@@ -13,20 +13,21 @@ authors = [
 maintainers = [
   {name = "Viacheslav Nikulin", email = "viacheslav.nikulin@gmail.com"}
 ]
-classifiers = [
-
-]
+classifiers = []
 license = {text = "MIT license"}
 dependencies = [
-  
+  "prompt_toolkit"
 ]
+
+[project.scripts]
+dockmon = "dockmon.main:main"
 
 [project.optional-dependencies]
 dev = [
-    "coverage",  # testing
-    "mypy",  # linting
-    "pytest",  # testing
-    "ruff"  # linting
+    "coverage",
+    "mypy",
+    "pytest",
+    "ruff"
 ]
 
 [project.urls]
